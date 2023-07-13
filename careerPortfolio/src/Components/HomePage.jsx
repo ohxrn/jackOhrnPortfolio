@@ -30,7 +30,7 @@ const HomePage = () => {
   useFrame((state) => {
     const time = state.clock.getElapsedTime();
 
-    const yOffset = 2 + Math.sin(time * 2) * 0.1; // Adjust the amplitude (0.1) as desired
+    const yOffset = 0.1 + Math.sin(time * 2) * 0.1; // Adjust the amplitude (0.1) as desired
     modelRef.current.position.y = yOffset;
 
     // Rotate the model
@@ -38,14 +38,16 @@ const HomePage = () => {
   });
   return (
     <>
-      <PerspectiveCamera ref={cameraLev} position-y={9999} />
-      <primitive
-        object={model.scene}
-        ref={modelRef}
-        scale={0.7}
-        rotation-y={-27}
-        rotation-x={0.5}
-      />
+      <>
+        <PerspectiveCamera ref={cameraLev} position-y={9999} />
+        <primitive
+          object={model.scene}
+          ref={modelRef}
+          scale={2.1}
+          rotation-y={-27}
+          rotation-x={0.5}
+        />
+      </>
     </>
   );
 };
