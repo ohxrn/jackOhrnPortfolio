@@ -3,7 +3,6 @@ import React from "react";
   @import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
 </style>;
 const Skills = () => {
-  console.log(window);
   return (
     <div style={{ height: "950px" }}>
       <h1
@@ -32,7 +31,7 @@ const Skills = () => {
               fontSize: "2.7rem",
             }}
           >
-            JavaScript
+            Python
           </p>
         </div>
         <div style={{ flex: "1" }}>
@@ -69,6 +68,52 @@ const Skills = () => {
             Java
           </p>
         </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          gap: "40px",
+          justifyContent: "center",
+          marginTop: "0px",
+        }}
+      >
+        <div
+          style={{
+            backgroundColor: "red",
+            width: "150px",
+            height: "150px",
+            flex: "1",
+          }}
+        ></div>
+        <div
+          style={{
+            width: "5px",
+            height: "150px",
+            flex: "1",
+          }}
+        >
+          <div
+            style={{
+              display: "block",
+              margin: "0 auto",
+              width: "5px",
+              backgroundColor: "purple",
+              height: "20vh",
+            }}
+          >
+            <div>
+              <p>Hey</p>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            backgroundColor: "red",
+            width: "150px",
+            height: "150px",
+            flex: "1",
+          }}
+        ></div>
       </div>
     </div>
   );
