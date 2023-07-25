@@ -1,5 +1,7 @@
-import { useRef, React, useState } from "react";
+import { useRef, React, useState, useEffect } from "react";
 import Skills from "./Skills";
+import "../index.css";
+import Projects from "./Projects";
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
 </style>;
@@ -8,7 +10,7 @@ export const ManageHome = () => {
   const scrollToRef = useRef(null);
   const [color, setColor] = useState("black");
   const enterSite = () => {
-    window.scrollTo({ top: 900, behavior: "smooth" });
+    window.scrollTo({ top: 980, behavior: "smooth" });
   };
   const changeBG = () => {
     setColor("blue");
@@ -54,6 +56,7 @@ export const ManageHome = () => {
       </button>
 
       <Skills />
+      <Projects />
     </div>
   );
 };

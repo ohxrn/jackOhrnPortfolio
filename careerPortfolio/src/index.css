@@ -12,5 +12,32 @@ body,
 
 
   color: rgba(0, 157, 255, 0.87);
-  background-color: #000000;
+  background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#073ABB', endColorstr='#000000', GradientType=0);
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(7, 58, 187, 1) 100%);
+}
+
+.fade-in-image {
+  opacity: 0;
+  /* Set the initial opacity to 0 */
+  transition: opacity 1.5s;
+  /* Define the transition property with duration */
+}
+
+.fade-in {
+  opacity: 1;
+  /* Change the opacity to 1 on intersection */
 }
