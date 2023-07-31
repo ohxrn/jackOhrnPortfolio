@@ -53,9 +53,6 @@ export const ManageHome = () => {
       >
         Enter Here
       </button>
-
-      <Skills />
-      <Projects />
     </div>
   );
 };
