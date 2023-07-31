@@ -2,6 +2,7 @@ import React from "react";
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
 </style>;
+import "../navBar.css";
 
 const NavBar = () => {
   return (

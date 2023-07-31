@@ -10,7 +10,7 @@ export const ManageHome = () => {
   const scrollToRef = useRef(null);
   const [color, setColor] = useState("black");
   const enterSite = () => {
-    window.scrollTo({ top: 980, behavior: "smooth" });
+    window.scrollTo({ top: 850, behavior: "smooth" });
   };
   const changeBG = () => {
     setColor("blue");
@@ -22,9 +22,9 @@ export const ManageHome = () => {
   return (
     <div>
       <p
+        className="textAd"
         style={{
           fontFamily: "Bayon",
-          fontSize: "6rem",
           textAlign: "center",
           margin: "0",
         }}
@@ -32,11 +32,10 @@ export const ManageHome = () => {
         Jack Ohrn's Portfolio
       </p>
       <button
+        className="textAdjust"
         style={{
-          width: "20%",
-          height: "45px",
           display: "block",
-          margin: "0 auto",
+
           color: "rgba(0, 157, 255, 0.87)",
           backgroundColor: color,
           border: "3px solid rgba(0, 157, 255, 0.87)",

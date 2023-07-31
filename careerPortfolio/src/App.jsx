@@ -8,9 +8,11 @@ function App() {
   return (
     <>
       <NavBar />
-      <Canvas style={{ height: "50vh", width: "100%" }}>
-        <HomePage />
-      </Canvas>
+      <div className="canvas-container">
+        <Canvas>
+          <HomePage />
+        </Canvas>
+      </div>
       <ManageHome />
     </>
   );

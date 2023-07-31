@@ -1,5 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
 
+.canvas-container {
+  width: 100%;
+  height: 50vh;
+}
+
+.textAd {
+  font-size: 6rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width:491px) and (max-width:920px) {
+  .canvas-container {
+    position: relative;
+    top: 25px;
+    height: 35vh;
+    width: "55%"
+  }
+
+  .textAdjust {
+    width: 155px;
+    height: 41px;
+    margin-bottom: 05px;
+  }
+
+  .textAd {
+    font-size: 5.2rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+
+}
+
+
+.textAdjust {
+  margin: 0 auto;
+  width: 300px;
+  height: 50px
+}
+
+@media (max-width: 490px) {
+  .canvas-container {
+    position: relative;
+    top: 83px;
+    height: 35vh;
+    width: "45%"
+      /* Change the height value to your desired smaller size */
+  }
+
+  .textAd {
+    position: relative;
+    top: 55px;
+    font-size: 4.2rem;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
+  .textAdjust {
+    position: relative;
+    top: 45px;
+    width: 155px;
+    height: 41px;
+    margin-top: 105px;
+    margin-bottom: 55px;
+
+  }
+}
+
+
 html,
 body,
 #root {
