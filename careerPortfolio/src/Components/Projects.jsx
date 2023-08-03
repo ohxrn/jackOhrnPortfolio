@@ -8,7 +8,7 @@ const Projects = ({ targetRefProjects }) => {
         url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
       </style>
       <div
-        style={{ display: "block", textAlign: "center" }}
+        style={{ display: "block", textAlign: "center", padding: "15%" }}
         ref={targetRefProjects}
         id="projects"
       >
@@ -27,9 +27,12 @@ const Projects = ({ targetRefProjects }) => {
             <div
               style={{
                 border: "4px solid #FF00FF",
-                width: "60%",
+                maxWidth: "600px ",
+                padding: "4%",
                 margin: "0 auto",
                 borderRadius: "45px",
+                marginLeft: "20% auto",
+                marginRight: "20% auto",
                 marginBottom: "45px",
               }}
             >
@@ -42,11 +45,45 @@ const Projects = ({ targetRefProjects }) => {
                   color: "pink",
                   display: "block",
                   textAlign: "center",
+                  marginBottom: "15px",
                 }}
                 href="https://github.com/ohxrn/NightOutOpenSource.git"
               >
                 See project here
               </a>
+              <div style={{ display: "flex", gap: "15px" }}>
+                <div>
+                  <img
+                    style={{ width: "100%", borderRadius: "13px" }}
+                    src="https://i.imgur.com/U8SIlhK.png"
+                  />
+                </div>
+                <div>
+                  <img
+                    style={{ width: "100%", borderRadius: "13px" }}
+                    src="https://i.imgur.com/JymeTEA.png"
+                  />
+                </div>
+                <div>
+                  <img
+                    style={{ width: "100%", borderRadius: "13px" }}
+                    src="https://i.imgur.com/jFhCqJc.png"
+                  />
+                </div>
+                <div>
+                  <img
+                    style={{ width: "100%", borderRadius: "13px" }}
+                    src="https://i.imgur.com/qQtTxTD.png"
+                  />
+                </div>
+                <div>
+                  <img
+                    style={{ width: "100%", borderRadius: "13px" }}
+                    src="https://i.imgur.com/leINSRo.png"
+                  />
+                </div>
+              </div>
+
               <p style={{ color: "white", fontFamily: "Bayon" }}>
                 A mobile application leveraging React, geolocation APIs, and
                 MongoDB to revolutionize the club and nightlife experience.
@@ -66,7 +103,7 @@ const Projects = ({ targetRefProjects }) => {
               }}
             >
               <img
-                style={{ width: "30%" }}
+                style={{ width: "50%" }}
                 src="https://i.imgur.com/iDdS22j.png"
               />
               <a

@@ -64,7 +64,7 @@ function App() {
   const scrollToTarget = (section) => {
     const targetElement = document.getElementById(section);
     if (targetElement) {
-      const targetOffset = targetElement.getBoundingClientRect().top;
+      const targetOffset = targetElement.getBoundingClientRect().top - 50;
       const currentScrollPosition =
         window.pageYOffset || document.documentElement.scrollTop;
       window.scrollTo({
@@ -80,19 +80,27 @@ function App() {
         <div
           className="navDiv"
           style={{
+            margin: "0",
             position: "fixed",
+            width: "100%",
             display: "flex",
-            gap: "30px",
+            gap: "60px",
             justifyContent: "flex-start",
             opacity: navDivOpacity,
             transition: "opacity 1s linear",
-            backgroundColor: "red",
+            background: "rgb(238, 174, 202)",
+            background:
+              "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)",
           }}
           id="poof"
         >
           <div>
             <p
-              style={{ fontFamily: "Bayon", color: "#FF00FF" }}
+              style={{
+                fontFamily: "Bayon",
+                color: "#FF00FF",
+                marginLeft: "20px",
+              }}
               onClick={() => scrollToTarget("skills")}
             >
               Skills in Technology
@@ -101,7 +109,10 @@ function App() {
           <div>
             <p
               onClick={() => scrollToTarget("projects")}
-              style={{ fontFamily: "Bayon", color: "#FF00FF" }}
+              style={{
+                fontFamily: "Bayon",
+                color: "#FF00FF",
+              }}
             >
               Projects / Experience
             </p>

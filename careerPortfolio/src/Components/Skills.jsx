@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import "../index.css";
+import "../skills.css";
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
@@ -26,272 +27,145 @@ const Skills = ({ targetRefSkills }) => {
   }, []);
 
   return (
-    <div style={{ height: "950px" }} ref={targetRefSkills} id="skills">
-      <h1
-        style={{
-          fontFamily: "Bayon",
-          color: "#FF00FF",
-          marginTop: "270px",
-          textAlign: "center",
-          fontSize: "2.7rem",
-        }}
-      >
-        My Skills
-      </h1>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div style={{ flex: "1" }}>
-          <img
-            className="fade-in-image"
-            style={{
-              width: "30%",
-              display: "block",
-              margin: "0 auto",
-            }}
-            src="https://i.imgur.com/uzSPa1s.png"
-          />
-          <p
-            style={{
-              fontFamily: "Bayon",
-              color: "#FF00FF",
-
-              textAlign: "center",
-              fontSize: "2.7rem",
-            }}
-          >
-            Python
-          </p>
-        </div>
-        <div style={{ flex: "1" }}>
-          <img
-            className="fade-in-image"
-            style={{
-              width: "90%",
-              display: "block",
-              margin: "0 auto",
-            }}
-            src="https://i.imgur.com/feSDGuj.png"
-          />
-          <p
-            style={{
-              fontFamily: "Bayon",
-              color: "#FF00FF",
-
-              textAlign: "center",
-              fontSize: "2.7rem",
-            }}
-          >
-            JavaScript
-          </p>
-        </div>
-        <div style={{ flex: "1" }}>
-          <img
-            className="fade-in-image"
-            style={{
-              width: "24%",
-              display: "block",
-              margin: "0 auto",
-            }}
-            src="https://i.imgur.com/iDdS22j.png"
-          />
-          <p
-            style={{
-              fontFamily: "Bayon",
-              color: "#FF00FF",
-              textAlign: "center",
-              fontSize: "2.7rem",
-            }}
-          >
-            Java
-          </p>
-        </div>
-      </div>
+    <>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
+        style={{ height: "950px" }}
+        ref={targetRefSkills}
+        id="skills"
+        className="skills"
       >
-        <div
-          style={{
-            width: "11px",
-            height: "20px",
-            flex: "1",
-          }}
-        >
-          <div>
-            <div
-              style={{
-                width: "4px",
-                minHeight: "40px",
-                background:
-                  "-moz-linear-gradient(190deg, rgba(238, 130, 238, 1) 0%, rgba(0, 0, 255, 1) 100%)",
-
-                margin: "0 auto",
-                boxShadow: "0 0 14px 5px rgba(0, 20, 255, 0.9)",
-              }}
-            ></div>
-            <div>
-              <h1
-                style={{
-                  marginLeft: "5px",
-                  textAlign: "center",
-                  fontFamily: "Bayon",
-                  color: "#FF00FF",
-                }}
-              >
-                Flask | MySql
-              </h1>
-            </div>
-            <div style={{ display: "flex", gap: "75px" }}>
-              <div
-                style={{
-                  flex: "1",
-                  display: "flex",
-                  justifyContent: "flex-end",
-                }}
-              >
-                <img
-                  className="fade-in-image"
-                  style={{ width: "64%" }}
-                  src="https://i.imgur.com/ySmPswh.png"
-                />
-              </div>
-              <div style={{ flex: "1", justifyContent: "flex-start" }}>
-                <img
-                  className="fade-in-image"
-                  style={{ width: "94%" }}
-                  src="https://i.imgur.com/23XHo4Z.png"
-                  alt="MySQL Image"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          style={{
-            width: "5px",
-            height: "50px",
-            flex: "1",
-          }}
-        >
-          <div
-            style={{
-              display: "block",
-              width: "5px",
-              background:
-                "-moz-linear-gradient(190deg, rgba(238, 130, 238, 1) 0%, rgba(0, 0, 255, 1) 100%)",
-              margin: "0 auto",
-              boxShadow: "0 0 14px 5px rgba(0, 20, 255, 0.9)",
-              height: "7vh",
-              position: "relative",
-              bottom: "35px",
-            }}
-          ></div>
-        </div>
-        <div
-          style={{
-            width: "150px",
-            height: "20px",
-            flex: "1",
-          }}
-        >
-          <div style={{ position: "relative", bottom: "120px" }}>
-            <div
-              style={{
-                width: "4px",
-                height: "280px",
-                background:
-                  "-moz-linear-gradient(190deg, rgba(238, 130, 238, 1) 0%, rgba(0, 0, 255, 1) 100%)",
-                margin: "0 auto",
-                boxShadow: "0 0 14px 5px rgba(0, 20, 255, 0.9)",
-              }}
-            ></div>
-            <div style={{ textAlign: "center" }}>
-              <h1 style={{ fontFamily: "Bayon", color: "#FF00FF" }}>
-                Spring | MySql
-              </h1>
-            </div>
-            <div style={{ display: "flex", gap: "25px" }}>
-              <div
-                style={{
-                  flex: "1",
-                  display: "flex",
-                  justifyContent: "flex-end",
-                }}
-              >
-                <img
-                  style={{ width: "62%", height: "62%" }}
-                  src="https://i.imgur.com/KiUZqvr.png"
-                />
-              </div>
-              <div style={{ flex: "1", justifyContent: "flex-start" }}>
-                <img
-                  className="fade-in-image"
-                  style={{ width: "94%", marginBottom: "90px" }}
-                  src="https://i.imgur.com/23XHo4Z.png"
-                  alt="MySQL Image"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h1
-          style={{
-            textAlign: "center",
-            fontFamily: "Bayon",
-            margin: "0",
-            color: "#FF00FF",
-          }}
-        >
-          THREE.JS | React.JS | MongoDB
+        <h1 style={{ marginTop: "200px" }} className="mySkills">
+          My Skills
         </h1>
-        <div style={{ display: "flex", gap: "60px" }}>
-          <div
-            style={{
-              flex: "1",
-
-              display: "flex",
-              justifyContent: "flex-end" /* Aligns content to the right */,
-              alignItems: "center" /* Centers the content vertically */,
-            }}
-          >
+        <div
+          className="flexIt"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            height: "600px",
+          }}
+        >
+          <div className="left" style={{ flex: "1" }}>
             <img
               className="fade-in-image"
-              style={{ width: "13%" }}
+              style={{
+                width: "30%",
+                display: "block",
+                margin: "0 auto",
+              }}
+              src="https://i.imgur.com/uzSPa1s.png"
+            />
+            <p className="pTitle">Python</p>
+
+            <div className="gradient"></div>
+            <h3 className="textLeft">Flask + MySql</h3>
+            <div
+              style={{ display: "flex", justifyContent: "center", gap: "15%" }}
+            >
+              <img
+                className="fade-in-image"
+                style={{ width: "24%" }}
+                src="https://i.imgur.com/ySmPswh.png"
+              />
+              <img
+                className="fade-in-image"
+                style={{ width: "24%" }}
+                src="https://i.imgur.com/23XHo4Z.png"
+                alt="MySQL Image"
+              />
+            </div>
+          </div>
+
+          <div className="middle" style={{ flex: "1" }}>
+            <img
+              className="fade-in-image"
+              style={{
+                width: "90%",
+                display: "block",
+                margin: "0 auto",
+              }}
               src="https://i.imgur.com/feSDGuj.png"
             />
+            <p className="pTitle">JavaScript</p>
+
+            <div className="gradient"></div>
+            <h3 style={{ marginLeft: "16px" }} className="textLeft">
+              React + JavaScript + Three.js + MongoDB
+            </h3>
+            <div>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  gap: "10%",
+                }}
+              >
+                <img
+                  className="fade-in-image"
+                  style={{ width: "36%", height: "36%" }}
+                  src="https://i.imgur.com/feSDGuj.png"
+                />
+
+                <img
+                  className="fade-in-image"
+                  style={{ width: "22%", height: "22%" }}
+                  src="https://i.imgur.com/2jJa8mA.png"
+                />
+              </div>
+              <div style={{ display: "flex" }}>
+                <img
+                  className="fade-in-image"
+                  style={{
+                    width: "33%",
+                    display: "block",
+                    margin: "0 auto",
+                  }}
+                  src="https://i.imgur.com/UQYyK4T.png"
+                />
+                <img
+                  style={{
+                    width: "23%",
+                    height: "23%",
+                    display: "block",
+                    margin: "0 auto",
+                  }}
+                  src="https://i.imgur.com/PnmzcwR.png"
+                />
+              </div>
+            </div>
           </div>
-          <div
-            style={{
-              flex: "1",
-              display: "flex",
-              justifyContent: "flex-start" /* Aligns content to the right */,
-              alignItems: "center",
-            }}
-          >
+          <div className="right" style={{ flex: "1" }}>
             <img
               className="fade-in-image"
-              style={{ width: "11%" }}
-              src="https://i.imgur.com/2jJa8mA.png"
+              style={{
+                width: "24%",
+                display: "block",
+                margin: "0 auto",
+              }}
+              src="https://i.imgur.com/iDdS22j.png"
             />
+            <p className="pTitle">Java</p>
+            <div className="gradient"></div>
+            <h3 className="textLeft">Spring + MySQL </h3>
+            <div
+              style={{ display: "flex", justifyContent: "center", gap: "15%" }}
+            >
+              <img
+                style={{ width: "26%", height: "26%" }}
+                src="https://i.imgur.com/KiUZqvr.png"
+              />
+
+              <img
+                className="fade-in-image"
+                style={{ width: "26%" }}
+                src="https://i.imgur.com/23XHo4Z.png"
+                alt="MySQL Image"
+              />
+            </div>
           </div>
         </div>
-        <img
-          className="fade-in-image"
-          style={{
-            width: "13%",
-            display: "block",
-            margin: "0 auto",
-            position: "relative",
-            bottom: "15px",
-          }}
-          src="https://i.imgur.com/UQYyK4T.png"
-        />
       </div>
-    </div>
+    </>
   );
 };
 

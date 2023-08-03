@@ -5,16 +5,85 @@
   height: 50vh;
 }
 
+.mySkills {
+  font-size: 4rem;
+  font-family: Bayon;
+  color: #FF00FF;
+  text-align: center;
+}
+
+.gradient {
+  width: 4px;
+  min-height: 60px;
+  background:
+    -moz-linear-gradient(190deg, rgba(238, 130, 238, 1) 0%, rgba(0, 0, 255, 1) 100%);
+  margin: 0 auto;
+  box-shadow: 0 0 14px 5px rgba(0, 20, 255, 0.9);
+}
+
+
+.textRight {
+  text-align: center;
+  font-family: Bayon;
+  color: #FF00FF;
+  font-size: 100%;
+}
+
+.pTitle {
+  font-family: Bayon;
+  color: #FF00FF;
+  text-align: center;
+  font-size: 3rem
+}
+
 .textAd {
   font-size: 6rem;
   margin: 0 auto;
   text-align: center;
 }
 
+
+.textLeft {
+  text-align: center;
+  font-family: Bayon;
+  color: #FF00FF;
+  font-size: 2rem;
+}
+
 @media (min-width:491px) and (max-width:920px) {
+  .gradient {
+    width: 4px;
+    min-height: 130px;
+    background:
+      -moz-linear-gradient(190deg, rgba(238, 130, 238, 1) 0%, rgba(0, 0, 255, 1) 100%);
+    margin: 0 auto;
+    box-shadow: 0 0 14px 5px rgba(0, 20, 255, 0.9);
+  }
+
   .navDiv {
     width: 100%;
     margin: 0 auto
+  }
+
+  .textAd {
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .textLeft {
+    text-align: center;
+    font-family: Bayon;
+    color: #FF00FF;
+    font-size: 1.2rem;
+  }
+
+  .pTitle {
+    font-family: Bayon;
+    color: #FF00FF;
+    text-align: center;
+    font-size: 2rem
   }
 
   .canvas-container {
@@ -48,12 +117,35 @@
 }
 
 @media (max-width: 490px) {
+  .gradient {
+    width: 1px;
+    min-height: 130px;
+    background:
+      -moz-linear-gradient(190deg, rgba(238, 130, 238, 1) 0%, rgba(0, 0, 255, 1) 100%);
+    margin: 0 auto;
+    box-shadow: 0 0 14px 5px rgba(0, 20, 255, 0.5);
+  }
+
   .canvas-container {
     position: relative;
     top: 83px;
     height: 35vh;
     width: "45%"
       /* Change the height value to your desired smaller size */
+  }
+
+  .textLeft {
+    text-align: center;
+    font-family: Bayon;
+    color: #FF00FF;
+    font-size: 1rem;
+  }
+
+  .pTitle {
+    font-family: Bayon;
+    color: #FF00FF;
+    text-align: center;
+    font-size: 1.2rem
   }
 
   .textAd {
@@ -66,8 +158,6 @@
   }
 
   .textAdjust {
-    position: relative;
-    top: 45px;
     width: 155px;
     height: 41px;
     margin-top: 105px;
