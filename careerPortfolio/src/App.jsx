@@ -12,8 +12,8 @@ function App() {
   const targetRefProjects = useRef(null);
   const targetRefSkills = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
-
   const [isVisible, setIsVisible] = useState(false);
+  const [navDivOpacity, setNavDivOpacity] = useState(0); // Added opacity state
 
   const handleScroll = () => {
     const currentPosition =
@@ -31,7 +31,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Replace 300 with the vertical height where you want the div to become visible
+      // Replace 700 with the vertical height where you want the div to become visible
       setIsVisible(window.pageYOffset > 700);
     };
 
@@ -43,6 +43,23 @@ function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    // Update the opacity state based on the isVisible state with a fade-in effect
+    if (isVisible) {
+      let opacity = 0;
+      const intervalId = setInterval(() => {
+        opacity += 1.9;
+        if (opacity >= 1) {
+          opacity = 1;
+          clearInterval(intervalId);
+        }
+        setNavDivOpacity(opacity);
+      }, 30); // Adjust the interval time (in milliseconds) to control the speed of the fade-in
+    } else {
+      setNavDivOpacity(0);
+    }
+  }, [isVisible]);
 
   const scrollToTarget = (section) => {
     const targetElement = document.getElementById(section);
@@ -67,6 +84,8 @@ function App() {
             display: "flex",
             gap: "30px",
             justifyContent: "flex-start",
+            opacity: navDivOpacity,
+            transition: "opacity 1s linear",
             backgroundColor: "red",
           }}
           id="poof"
