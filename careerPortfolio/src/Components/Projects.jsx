@@ -27,7 +27,7 @@ const Projects = ({ targetRefProjects }) => {
             <div
               style={{
                 border: "4px solid #FF00FF",
-                width: "20%",
+                width: "60%",
                 margin: "0 auto",
                 borderRadius: "45px",
                 marginBottom: "45px",
@@ -59,14 +59,14 @@ const Projects = ({ targetRefProjects }) => {
             <div
               style={{
                 border: "4px solid #FF00FF",
-                width: "20%",
+                width: "60%",
                 margin: "0 auto",
                 borderRadius: "45px",
                 marginBottom: "45px",
               }}
             >
               <img
-                style={{ width: "50%" }}
+                style={{ width: "30%" }}
                 src="https://i.imgur.com/iDdS22j.png"
               />
               <a
