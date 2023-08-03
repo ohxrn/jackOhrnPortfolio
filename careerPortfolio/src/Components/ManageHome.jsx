@@ -10,7 +10,7 @@ export const ManageHome = () => {
   const scrollToRef = useRef(null);
   const [color, setColor] = useState("black");
   const enterSite = () => {
-    window.scrollTo({ top: 850, behavior: "smooth" });
+    window.scrollTo({ top: 780, behavior: "smooth" });
   };
   const changeBG = () => {
     setColor("blue");

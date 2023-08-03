@@ -85,7 +85,8 @@ const Projects = ({ targetRefProjects }) => {
               </div>
 
               <p style={{ color: "white", fontFamily: "Bayon" }}>
-                A mobile application leveraging React, geolocation APIs, and
+                Currently an open source development, I am the director of A
+                mobile application leveraging React, geolocation APIs, and
                 MongoDB to revolutionize the club and nightlife experience.
                 Seamlessly tracks real-time crowd density and energy levels,
                 enabling users to discover and explore the city's hottest spots.
