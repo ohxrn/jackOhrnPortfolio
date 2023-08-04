@@ -49,7 +49,7 @@ const Projects = ({ targetRefProjects }) => {
                 }}
                 href="https://github.com/ohxrn/NightOutOpenSource.git"
               >
-                See project here
+                NightOut
               </a>
               <div style={{ display: "flex", gap: "15px" }}>
                 <div>
@@ -97,9 +97,12 @@ const Projects = ({ targetRefProjects }) => {
             <div
               style={{
                 border: "4px solid #FF00FF",
-                width: "60%",
+                maxWidth: "600px ",
+                padding: "4%",
                 margin: "0 auto",
                 borderRadius: "45px",
+                marginLeft: "20% auto",
+                marginRight: "20% auto",
                 marginBottom: "45px",
               }}
             >
@@ -111,7 +114,7 @@ const Projects = ({ targetRefProjects }) => {
                 style={{ display: "block", textAlign: "center", color: "pink" }}
                 href="https://github.com/ohxrn/Java-CRUD.git"
               >
-                Click to view project
+                JAVA Full CRUD
               </a>
               <p style={{ color: "white", fontFamily: "Bayon" }}>
                 Using O.O.P., I developed a secure Java application leveraging

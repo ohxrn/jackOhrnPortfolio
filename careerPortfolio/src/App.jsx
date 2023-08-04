@@ -5,7 +5,7 @@ import HomePage from "./Components/HomePage";
 import { ManageHome } from "./Components/ManageHome";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import "./index.css";
 
 function App() {
@@ -75,7 +75,21 @@ function App() {
   };
 
   return (
-    <>
+    <Suspense
+      fallback={
+        <div
+          style={{
+            textAlign: "center",
+            width: "100%",
+            height: "1000vh",
+            backgroundColor: "black",
+            fontSize: "3rem",
+          }}
+        >
+          <h1 style={{ marginTop: "250px" }}>Rendering...</h1>
+        </div>
+      }
+    >
       {isVisible && (
         <div
           className="navDiv"
@@ -128,7 +142,7 @@ function App() {
       <ManageHome />
       <Skills targetRef={targetRefSkills} />
       <Projects targetRef={targetRefProjects} />
-    </>
+    </Suspense>
   );
 }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import * as THREE from "three";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
@@ -38,16 +38,14 @@ const HomePage = () => {
   });
   return (
     <>
-      <>
-        <PerspectiveCamera ref={cameraLev} position-y={9999} />
-        <primitive
-          object={model.scene}
-          ref={modelRef}
-          scale={2.1}
-          rotation-y={-27}
-          rotation-x={0.5}
-        />
-      </>
+      <PerspectiveCamera ref={cameraLev} position-y={9999} />
+      <primitive
+        object={model.scene}
+        ref={modelRef}
+        scale={2.1}
+        rotation-y={-27}
+        rotation-x={0.5}
+      />
     </>
   );
 };
