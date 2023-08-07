@@ -94,6 +94,7 @@ const Projects = ({ targetRefProjects }) => {
                 nightlife adventures.
               </p>
             </div>
+
             <div
               style={{
                 border: "4px solid #FF00FF",
@@ -108,24 +109,26 @@ const Projects = ({ targetRefProjects }) => {
             >
               <img
                 style={{ width: "50%" }}
-                src="https://i.imgur.com/iDdS22j.png"
+                src="https://i.imgur.com/kTbSu1x.png"
               />
               <a
                 style={{ display: "block", textAlign: "center", color: "pink" }}
-                href="https://github.com/ohxrn/Java-CRUD.git"
+                href="https://github.com/ohxrn/FaceTrack"
               >
-                JAVA Full CRUD
+                Python Facial Recognition
               </a>
               <p style={{ color: "white", fontFamily: "Bayon" }}>
-                Using O.O.P., I developed a secure Java application leveraging
-                the latest Spring technology for user authentication and
-                authorization. The app provides a comprehensive CRUD interface
-                to manage personalized classes, enabling users to create,
-                modify, and delete their own classes while allowing others to
-                join existing ones. With robust security features and seamless
-                registration and login functionalities, the app ensures a
-                seamless and user-friendly experience.
+                In this cutting-edge project, I leveraged the power of Python
+                and the OpenCV library to create a real-time face detection and
+                tracking application. Utilizing advanced computer vision
+                techniques, the program seamlessly identifies faces within a
+                live camera feed and promptly responds by drawing a bounding box
+                around each detected face.
               </p>
+              <img
+                style={{ width: "70%" }}
+                src="https://i.imgur.com/ycdnuYo.png"
+              />
             </div>
           </div>
         </div>
